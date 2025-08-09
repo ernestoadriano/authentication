@@ -13,7 +13,7 @@ Ele implementa autenticação baseada em tokens, controle de acesso por **roles*
 * **JWT (JSON Web Token)**
 * **Maven**
 * **JPA / Hibernate**
-* **Base de dados relacional** (configuração ajustável)
+* **Base de dados relacional** (MySQL)
 
 ---
 
@@ -56,8 +56,10 @@ cd authentication
 **Configurar variáveis de ambiente** (`.env`)
 
 ```env
-JWT_SECRET=chave_secreta
-JWT_EXPIRATION=3600000
+DB_USER=root
+DB_PASSWORD=password
+DB_URL=jdbc:mysql://localhost:3306/db
+JWT_SECRET=secret
 ```
 
 **Instalar dependências e executar**
